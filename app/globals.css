@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: azure;
+}
+
+nav {
+  background: #1A1A2E;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F4B41A;
+}
+
+.main {
+  font-size: larger;
+  text-transform: uppercase;
+}
+
+.container {
+  background: #1A1A2E;
+  height: auto; 
+  width: 100%;
+  max-width: 500px; 
+  color: #FDCB58;
+  margin: 10px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.here {
+  font-size: larger;
+  padding-top: 19px;
+  text-align: center;
+  font-weight: bold;
+  color: #F4B41A;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%; 
+  margin: 5px auto;
+  text-align: center;
+}
+
+tr td, th {
+  border: 2px solid #F4B41A;
+  padding: 15px;
+}
+
+th {
+  padding: 15px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  nav {
+    height: 50px;
+  }
+
+  .main {
+    font-size: 1.2rem; 
+  }
+
+  .container {
+    max-width: 90%; 
+    margin-top: 20px;
+  }
+
+  table {
+    width: 100%; 
+  }
+
+  .here {
+    font-size: 1.1rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    height: 45px;
+  }
+
+  .main {
+    font-size: 
+  }
+
+  .container {
+    max-width: 95%;
+    padding: 15px; 
+  }
+
+  .here {
+    font-size: 1rem;
+  }
+
+  table {
+    width: 100%;
+    font-size: 0.9rem; 
+  }
+}

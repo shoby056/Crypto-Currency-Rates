@@ -26,16 +26,55 @@ nav {
 
 .container {
   background: #1A1A2E;
-  height: auto; 
+  height: auto;
   width: 100%;
-  max-width: 500px; 
+  max-width: 500px;
   color: #FDCB58;
   margin: 10px auto;
   padding: 20px;
   box-sizing: border-box;
   border-radius: 8px;
-  transition: box-shadow 0.3s ease;
+  border-top: 5px solid red;
+  border-right: 5px solid blue;
+  border-bottom: 5px solid green;
+  border-left: 5px solid yellow;
+  animation: move-border 2.5s linear infinite; /* Animation applies here */
 }
+
+@keyframes move-border {
+  0% {
+    border-top: 5px solid red;
+    border-right: 5px solid blue;
+    border-bottom: 5px solid green;
+    border-left: 5px solid yellow;
+  }
+  25% {
+    border-top: 5px solid blue;
+    border-right: 5px solid green;
+    border-bottom: 5px solid yellow;
+    border-left: 5px solid red;
+  }
+  50% {
+    border-top: 5px solid green;
+    border-right: 5px solid yellow;
+    border-bottom: 5px solid red;
+    border-left: 5px solid blue;
+  }
+  75% {
+    border-top: 5px solid yellow;
+    border-right: 5px solid red;
+    border-bottom: 5px solid blue;
+    border-left: 5px solid green;
+  }
+  100% {
+    border-top: 5px solid red;
+    border-right: 5px solid blue;
+    border-bottom: 5px solid green;
+    border-left: 5px solid yellow;
+  }
+}
+
+
 
 .container:hover {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;

@@ -1,27 +1,36 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
+    "target": "ESNext", // Ensure you're targeting ESNext
+    "module": "ESNext", // Use ES modules
+    "jsx": "preserve", // Enable JSX support for React
+    "moduleResolution": "Node", // Use Node module resolution
+    "esModuleInterop": true, // Enable interop between CommonJS and ES modules
+    "allowJs": true, // Allow JavaScript files in the project
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "strict": true, // Enable strict type checking
+    "incremental": true, // Enable incremental compilation
+    "resolveJsonModule": true, // Allow importing JSON files as modules
+    "isolatedModules": true // Support for isolated modules, needed for Next.js and SWC/Babel
+    ,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
     "plugins": [
       {
         "name": "next"
       }
-    ],
-    "paths": {
-      "@/*": ["./*"]
-    }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

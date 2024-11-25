@@ -1,48 +1,9 @@
 {
   "compilerOptions": {
-<<<<<<< HEAD
-    "target": "ESNext", // Ensure you're targeting ESNext
-    "module": "ESNext", // Use ES modules
-    "jsx": "preserve", // Enable JSX support for React
-    "moduleResolution": "Node", // Use Node module resolution
-    "esModuleInterop": true, // Enable interop between CommonJS and ES modules
-    "allowJs": true, // Allow JavaScript files in the project
-    "skipLibCheck": true, // Skip type checking of declaration files
-    "strict": true, // Enable strict type checking
-    "incremental": true, // Enable incremental compilation
-    "resolveJsonModule": true, // Allow importing JSON files as modules
-    "isolatedModules": true // Support for isolated modules, needed for Next.js and SWC/Babel
-    ,
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "noEmit": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
-  },
-  "include": [
-    "next-env.d.ts",
-    ".next/types/**/*.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
-=======
-    "jsx": "react",
+    "target": "es5",
+    "lib": ["dom", "esnext"],
     "allowJs": true,
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "module": "ESNext",
-    "target": "ES6",
+    "jsx": "react",
     "moduleResolution": "node"
-  },
-  "include": ["./app/**/*"]
->>>>>>> a06c48bd54ed68453a4c1397168052ddf58d2118
+  }
 }

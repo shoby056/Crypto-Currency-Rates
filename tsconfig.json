@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
     "target": "ESNext", // Ensure you're targeting ESNext
     "module": "ESNext", // Use ES modules
     "jsx": "preserve", // Enable JSX support for React
@@ -33,4 +34,15 @@
   "exclude": [
     "node_modules"
   ]
+=======
+    "jsx": "react",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "target": "ES6",
+    "moduleResolution": "node"
+  },
+  "include": ["./app/**/*"]
+>>>>>>> a06c48bd54ed68453a4c1397168052ddf58d2118
 }

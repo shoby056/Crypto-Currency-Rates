@@ -38,7 +38,11 @@ nav {
   border-right: 5px solid blue;
   border-bottom: 5px solid green;
   border-left: 5px solid yellow;
+<<<<<<< HEAD
   animation: move-border 2s linear infinite; /* Animation applies here */
+=======
+  animation: move-border 2.5s linear infinite; /* Animation applies here */
+>>>>>>> a06c48bd54ed68453a4c1397168052ddf58d2118
 }
 
 @keyframes move-border {

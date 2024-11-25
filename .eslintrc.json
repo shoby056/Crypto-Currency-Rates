@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "parser": "@typescript-eslint/parser",
   "extends": [
     "eslint:recommended",
@@ -19,9 +18,4 @@
   "rules": {
     "@typescript-eslint/no-explicit-any": "warn"
   }
-=======
-    "rules": {
-        "@typescript-eslint/no-explicit-any": "off"
-    }
->>>>>>> a06c48bd54ed68453a4c1397168052ddf58d2118
 }

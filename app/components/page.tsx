@@ -1,12 +1,13 @@
-"use client";
+"use client"
 import { useState, useEffect } from "react";
 
 
 
 export default function CryptoRates(){
-    const API_KEY = "2589481e3c2a817474bba7774962defb";
+    // const API_KEY = "3251945b5f95ea3a9162dfb71217145c";
+    const API_KEY = "5068db716bc1b9f4fa6963de4c5d4269";
+
     const [data, setData] = useState<any>(null);
-  
     useEffect(() => {
       fetch(`http://api.coinlayer.com/live?access_key=${API_KEY}`)
         .then((response) => response.json())
@@ -16,6 +17,10 @@ export default function CryptoRates(){
         });
     }, []);
 
+    // const data = await fetch(`http://api.coinlayer.com/live?access_key=${API_KEY}`) 
+    // const fetched_data = await data.json()
+
+    // console.log(fetched_data)
 
     return(
         <div>
